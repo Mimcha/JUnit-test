@@ -1,10 +1,18 @@
 package org.example;
 
 public class PasswordChecker {
+
+
     private static int minLength = -1;
     private static int maxRepeats = -1;
 
+    public static int getMinLength() {
+        return minLength;
+    }
 
+    public static int getMaxRepeats() {
+        return maxRepeats;
+    }
     public void setMinLength(int minLength) {
         //Если в сеттер передали недопустимое значение (отрицательное число),
         // то должно выкинуться исключение IllegalArgumentException,
